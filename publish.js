@@ -1,5 +1,4 @@
-// TODO const Feeds = require("pusher-feeds-server");
-const Feeds = require("pusher-feeds-server").Feeds;
+const Feeds = require("pusher-feeds-server");
 
 const feeds = new Feeds({
   serviceId: "YOUR_SERVICE_ID_HERE",
