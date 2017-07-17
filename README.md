@@ -1,4 +1,4 @@
-This repository accompanies the [Feeds getting started](https://pusher-mimir.herokuapp.com/feeds/getting-started).
+This repository accompanies the [Feeds getting started](http://docs.pusher.com/feeds/getting-started).
 
 To get started:
 
