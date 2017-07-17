@@ -1,8 +1,8 @@
 const Feeds = require("pusher-feeds-server");
 
 const feeds = new Feeds({
-  serviceId: "YOUR_SERVICE_ID_HERE",
-  serviceKey: "YOUR_SERVICE_KEY_HERE",
+  instance: "YOUR_INSTANCE_STRING",
+  key: "YOUR_KEY",
 });
 
 feeds.publish("playground", {
