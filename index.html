@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://unpkg.com/pusher-feeds-client"></script>
     <title>Feeds getting started</title>
+    <script src="https://unpkg.com/pusher-feeds-client"></script>
   </head>
   <body>
     <script>
       const feeds = new Feeds({
-        serviceId: "YOUR_SERVICE_ID_HERE",
+        instance: "YOUR_INSTANCE_STRING",
       });
 
       const playground = feeds.feed("playground");
 
       playground.subscribe({
-        tailSize: 5,
-        onOpen: () => console.log("Connection established"),
-        onItem: item => {
-          console.log("New item:", item.body.data);
-          const p = document.createElement("p");
-          p.textContent = item.body.data.message;
-          console.log(p, document.body);
-          document.body.appendChild(p);
+        previousItems: 5,
+        onOpen: () => {
+          console.log("Feeds: Connection established");
         },
-        onError: error => console.error("Error:", error),
+        onItem: item => {
+          console.log("Feeds new item:", item.body.data);
+          document.body.innerHTML +=
+            `<p>${item.body.data.message}</p>`;
+        },
+        onError: error => {
+          console.error("Error:", error);
+        },
       });
     </script>
   </body>
