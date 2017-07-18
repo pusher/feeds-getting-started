@@ -20,7 +20,7 @@
         onItem: item => {
           console.log("Feeds new item:", item.body.data);
           document.body.innerHTML +=
-            `<p>${item.body.data.message}</p>`;
+            `<p>${JSON.stringify(item.body.data)}</p>`;
         },
         onError: error => {
           console.error("Error:", error);
