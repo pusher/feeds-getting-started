@@ -7,8 +7,8 @@ Set up:
     $ cd feeds-getting-started
     $ yarn
 
-Replace `"YOUR_INSTANCE_ID"` and `"YOUR_INSTANCE_KEY"` with your actual
-instance ID and key from [the dashboard](https://dash.pusher.com), then open
-`index.html` in your favourite browser. Publish with
+Replace `"YOUR_INSTANCE_ID"` and `"YOUR_KEY"` with your actual instance ID and
+key from [the dashboard](https://dash.pusher.com), then open `index.html` in
+your favourite browser. Publish with
 
     $ node publish.js
