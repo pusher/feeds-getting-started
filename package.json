@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "pusher-feeds-server": "^0.3.0"
+    "pusher-feeds-server": "^0.4.0"
   }
 }
