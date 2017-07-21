@@ -1,7 +1,7 @@
 const Feeds = require("pusher-feeds-server");
 
 const feeds = new Feeds({
-  instance: "YOUR_INSTANCE_STRING",
+  instanceId: "YOUR_INSTANCE_ID",
   key: "YOUR_KEY",
 });
 
