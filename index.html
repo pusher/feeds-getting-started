@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Feeds getting started</title>
-    <script src="https://unpkg.com/pusher-feeds-client@0.7.0"></script>
+    <script src="https://unpkg.com/pusher-feeds-client@0.8.1"></script>
   </head>
   <body>
     <script>
@@ -18,9 +18,9 @@
           console.log("Feeds: Connection established");
         },
         onItem: item => {
-          console.log("Feeds new item:", item.body.data);
+          console.log("Feeds new item:", item.data);
           document.body.innerHTML +=
-            `<p>${JSON.stringify(item.body.data)}</p>`;
+            `<p>${JSON.stringify(item.data)}</p>`;
         },
         onError: error => {
           console.error("Error:", error);
